@@ -104,7 +104,6 @@ public:
 int main() {
     SpecialSymbols symbol1('A');
     SpecialSymbols symbol2('А');
-    char symbol = ' ';
 
     if (symbol1 == symbol2)
         cout << "== true" << "\n";

@@ -102,15 +102,13 @@ public:
 };
 
 int main() {
-    system("chcp 1251");
+    system("chcp 1251>nul");
 
     SpecialSymbols symbol1('A');
     SpecialSymbols symbol2('А');
     char t1, t2;
-    cin >> t1 >> t2;
-
-    symbol1.SetSymbols(t1);
-    symbol2.SetSymbols(t2);
+    cout << "Write symbol #1: "; cin >> t1; symbol1.SetSymbols(t1);
+    cout << "Write symbol #2: "; cin >> t2; symbol2.SetSymbols(t2);
 
     if (symbol1 == symbol2)
         cout << "== true" << "\n";

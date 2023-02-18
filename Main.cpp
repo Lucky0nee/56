@@ -107,8 +107,8 @@ int main() {
     SpecialSymbols symbol1('A');
     SpecialSymbols symbol2('А');
     char t1, t2;
-    cout << "Write symbol #1: "; cin >> t1; symbol1.SetSymbols(t1);
-    cout << "Write symbol #2: "; cin >> t2; symbol2.SetSymbols(t2);
+    cout << "Write a capital letter #1: "; cin >> t1; symbol1.SetSymbols(t1);
+    cout << "Write a capital letter #2: "; cin >> t2; symbol2.SetSymbols(t2);
 
     if (symbol1 == symbol2)
         cout << "== true" << "\n";
